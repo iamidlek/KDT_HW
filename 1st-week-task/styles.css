@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    /* letter-spacing: -0.01em; */
+    background-image: url('assets/Space-PNG-Pic.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFF;
+}
+
+/*Vendor Prefix (브라우저 업체별 접두사)*/
+.input--text::-webkit-input-placeholder { color: #CCC; }
+.input--text::-ms-input-placeholder { color: #CCC; }
+.input--text::-moz-input-placeholder { color: #CCC; }
+
+/* 헤더 영역 */
+.center {
+    display: flex;
+    max-width: 1125px;
+    height: 56px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.center nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center .logo {
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin-right: 24px;
+    background: url('assets/github.svg');
+    text-indent: -9999px;
+}
+
+.center ul {
+    display: flex;
+}
+
+.center ul li{
+    display: flex;
+}
+
+.center ul li a{
+    display: block;
+    padding: 16px 0;
+    margin-right: 16px;
+    text-decoration: none;
+    color: #FFF;
+}
+
+/* 헤더 아이템 */
+.center .header-item {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.header-item .search .input--text {
+    width: 240px;
+    height: 35px;
+    padding: 8px 12px;
+    margin-right: 14px;
+    border: none;
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, .15);
+    font-size: 14px;
+    outline: none;
+    box-shadow: none;
+}
+
+.header-item .search .input--text:focus {
+    background-color: rgba(255, 255, 255);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.header-item .button-hidden {
+    display: none;
+    height: 100%;
+}
+
+.header-item .sign-in {
+    /* display: block; */
+    margin-right: 14px;
+    font-size: 16px;
+    color: #FFF;
+    background-color: transparent;
+    border: none;
+}
+
+.header-item .sign-up {
+    display: block;
+    color: #FFF;
+    font-size: 16px;
+    margin-right: 8px;
+    background-color: transparent;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    padding: 5px 7px;
+}
