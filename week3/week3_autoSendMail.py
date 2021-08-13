@@ -1,9 +1,12 @@
-from NaverNewsCrawler import NaverNewsCrawler
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
-import smtplib
+# 내장 표준 라이브러리
 import re
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+import smtplib
+# 외부 라이브러리
 from openpyxl import load_workbook
+# 디렉토리 내부
+from NaverNewsCrawler import NaverNewsCrawler
 
 # 단계를 1 ~ 5 단계로 나누어 기재하였습니다.
 # 1, 2 단계는 제공 받은 템플릿 입니다.
